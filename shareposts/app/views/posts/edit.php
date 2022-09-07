@@ -9,14 +9,14 @@
              <p class="text-center">Create a post with this form: </p>
      <form action="<?php echo URLROOT; ?>/posts/edit/<?php echo $data['id']; ?>" method="post">
                  
-         <!-- Email: -->
+         <!-- Title: -->
          <div class="form-group">
-             <label for="email">Title: <sup>*</sup></label>
+             <label for="title">Title: <sup>*</sup></label>
              <input type="text" name="title" class="form-control form-control-lg <?php echo (!empty($data['title_error'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['title']; ?>">
              <span class="invalid-feedback"><?php echo $data['title_error']; ?></span>
          </div>
  
-         <!-- Password: -->
+         <!-- Body: -->
          <div class="form-group">
              <label for="body">Body: <sup>*</sup></label>
              <textarea name="body" class="form-control form-control-lg <?php echo (!empty($data['body_error'])) ? 'is-invalid' : ''; ?>">
